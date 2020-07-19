@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  
+  pre_build:
+    commands:
+      - pip install python-lambda
+      - lambda init
+      - ls
+  build:
+    commands:
+      - ls
+      - pwd
+  
