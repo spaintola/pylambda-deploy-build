@@ -15,4 +15,5 @@ phases:
     commands:
       - ls
       - pwd
+      - lambda deploy
   
