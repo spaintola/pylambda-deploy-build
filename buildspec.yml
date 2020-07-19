@@ -13,7 +13,7 @@ phases:
       - mv ./org/config.yaml .
       - mv ./org/service.py .
       - rm -rf ./org
-      - pip install requirements.txt
+      - pip install -r requirements.txt
       - ls
   build:
     commands:
