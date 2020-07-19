@@ -6,9 +6,12 @@ phases:
       - pip install python-lambda
       - mkdir -p ./org
       - mv config.yaml ./org
+      - mv service.py ./org
       - lambda init
       - rm -rf config.yaml
+      - rm -rf service.py
       - mv ./org/config.yaml .
+      - mv ./org/service.py .
       - rm -rf ./org
       - ls
   build:
