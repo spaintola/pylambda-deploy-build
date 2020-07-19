@@ -4,7 +4,12 @@ phases:
   pre_build:
     commands:
       - pip install python-lambda
+      - mkdir -p ./org
+      - mv config.yaml ./org
       - lambda init
+      - rm -rf config.yaml
+      - mv ./org/config.yaml .
+      - rm -rf ./org
       - ls
   build:
     commands:
